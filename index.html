@@ -4,31 +4,34 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="stylesheet" href="css/style.css">
+        
         <title>Responsive & animated</title>
 
         <!-- ... the link to your stylesheet -->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <!-- ... the link to your logo.icon -->
-
+        
         <!-- ... your link to Font Awesome -->
-
+        
     </head>
     <body>
-
+        
         <div id="top"></div>
 
         <header>
 
-            <h1><span>n</span><span>icolas</span><span><!-- ... 2 spaces --></span><span>h</span><span>erbez</span></h1>
+            <h1><span>G</span><span>regory</span><span>&ensp;</span><span>D</span><span>ruelle</span></h1>
+
 
             <div>
-                <!-- ... your responsive logo -->
-                <img srcset="LOGO WEB E-COM 1 Fb.png,
-                        LOGO WEB E-COM 2 Fb.png 1.5x,
-                        LOGO WEB E-COM 3 Fb.png 2x"
-                        src="LOGO WEB E-COM 1 Fb.png" alt="WEB E-COM">
+                <picture>
+                    <source srcset="img/LOGO1.png" media="(min-width: 1280px)">
+                    <source srcset="img/LOGO2.png" media="(min-width: 810px)">
+                    <img src="img/LOGO3.png" alt="WEBECOM">
+                </picture>
             </div>
+                <!-- responsive logo -->
 
             <!-- ... the anchor link for "section-1" -->
 
@@ -85,8 +88,9 @@
         <footer id="footer">
 
             <!-- ... the anchor link for "top" -->
-
-            <p>your copyright</p>
+        <a href="#top"><i class="fa-solid fa-comment-arrow-up"></i></a>
+           
+        <p class="copyright">WEB E-COM @ 2023</p>
 
         </footer>
 
