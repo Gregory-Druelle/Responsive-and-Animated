@@ -11,11 +11,31 @@
 /* ----------------------------------------------------------- */
 /*header*/
 
-h1 {
-    text-align: center;
+/*clic provisoire*/
 
+p {
+    color: black;
+    font-size: 50px;
+    text-align: center;
 }
 
+h1 {
+    text-align: center;  
+}
+
+    
+header h1 :nth-child(2) {
+    display: none;
+}
+header h1 :nth-child(3) {
+    display: none;
+}
+header h1 :nth-child(5) {
+    display: none;
+}
+
+
+  
 header {
     height: 100vh;
     width: 100%;
@@ -36,13 +56,64 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
+
 /*section 1*/
+
+@keyframes samba2 {
+    From {
+        opacity: 0;
+    }
+    To {
+        opacity: 5;
+    }}
+
+@keyframes samba1 {
+    From {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+#section-1 div:nth-child(2):hover {
+    animation-name: samba2;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#section-1 div:nth-child(1) img:hover {
+    animation-name: samba1;
+    animation-delay: 0ms;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    
+}
+
+#section-1 div {
+    margin: 15px;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 #section-1 {
+    flex-direction: column;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*section 2*/
@@ -58,7 +129,7 @@ header {
 }
 
 
-body {background-color: rgb(226, 212, 212);}
+body {background-color: burlywood;}
 
 
 
